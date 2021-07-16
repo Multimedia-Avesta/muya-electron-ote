@@ -1,0 +1,41 @@
+<teiHeader>
+	<fileDesc>
+	    <titleStmt>
+	        <title type="document" n="%siglum%">A Transcription %of section% of the Avestan Yasna in %siglum%</title>
+	    	<respStmt>
+	            <resp>Data entry and TEI markup by</resp>
+	            <name>%name%</name>
+	        </respStmt>
+	        <funder>The European Research Council</funder>
+	        <principal>Almut Hintze</principal>
+	    </titleStmt>
+	    <editionStmt>
+	        <edition n="0.1">
+	            Version 0.1, Last modified, <date>%last saved date%</date>
+	        </edition>
+	    </editionStmt>
+	    <publicationStmt>
+	        <distributor>
+	            <name type="org">Corpus Avesticum: Digital Yasna (CoAv)</name>
+	            <name type="org">School of Oriental and African Studies (SOAS)</name>
+	            <name type="org">University of London (UoL)</name>             
+	        </distributor>
+	        <availability><p>Attribution 4.0 International (CC BY 4.0) Available for re-use under a creative commons license provided attribution is made to the original creators</p></availability>
+	    </publicationStmt>
+	    <sourceDesc>
+	        <msDesc>
+	            <msIdentifier>
+	                <altIdentifier><idno>%siglum%</idno></altIdentifier>
+	            </msIdentifier>
+	        </msDesc>
+	        <listWit>
+	            <witness xml:id="firsthand"/>
+	        </listWit>
+	    </sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+	    <projectDesc><p>This transcription was made by the Multimedia Yasna Project.</p></projectDesc>
+	    <editorialDecl><p>This transcription was made using the MUYA OTE.</p></editorialDecl>
+	    <variantEncoding method="parallel-segmentation" location="internal"/>
+	</encodingDesc>
+</teiHeader>

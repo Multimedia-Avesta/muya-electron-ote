@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+		<title>Preferences</title>
+		<link rel="stylesheet" href="assets/css/preferences.css"/>
+	</head>
+	<body>
+		<div id="first_time_splash">
+			<h3>Preferences</h3>
+			<p>Welcome to the transcription editor!</p>
+			<p>Please check the preferences below and provide any missing details.</p>
+		</div>
+		<div class="container-fluid">
+			<form id="preferences_frm">
+
+				<input type="hidden" id="initialisation" value="false"/>
+
+				<label id="transcriber_label" for="transcriber">Transcriber name:</label>
+				<input type="text" id="transcriber"/>
+
+				<label id="default_directory_label" for="default_directory">Default data directory:</label>
+				<input data-toggle="tooltip" title="Click to change" type="text" readonly="readonly" id="default_directory"></input>
+
+				<label id="default_basetext_directory_label" for="default_basetext_directory">Default basetext directory:</label>
+				<input data-toggle="tooltip" title="Click to change" type="text" readonly="readonly" id="default_basetext_directory"></input>
+
+				<div id="buttons">
+					<input type="button" value="Save" id="save-btn"/>
+					<input type="button" value="Cancel" id="cancel-btn" disabled="disabled"/>
+				</div>
+
+			</form>
+		</div>
+		<script>window.$ = window.jQuery = require('jquery');</script>
+		<script type="text/javascript" src="preferencesRenderer.js"></script>
+	</body>
+</html>

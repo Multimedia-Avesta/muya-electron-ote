@@ -1,0 +1,53 @@
+/* startNewDialogue.html and startBasetextDialogue.html and noHeaderDialogue.html*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#new_transcription_frm, #broken_header_frm {
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: 80px auto;
+}
+
+#siglum_label, #language_label, #select_basetext_label {
+	grid-column: 1 / 2;
+	justify-self: right;
+}
+
+#siglum, #language {
+	grid-column: 2 / 3;
+}
+
+#basetext_section {
+	grid-column: 2 / 3;
+	display: inline-grid;
+	grid-column-gap: 5px;
+	grid-template-columns: auto auto;
+}
+
+#select_basetext_btn {
+	grid-column: 1 / 2;
+}
+
+#basetext_path_display {
+	grid-column: 2 / 3;
+}
+
+#start_transcription_btn {
+	grid-column: 2 / 3;
+	justify-self: right;
+	padding: 3px;
+}
+
+/* noHeaderDialogue.html only */
+
+#buttons {
+	grid-column: 2 / 3;
+	justify-self: right;
+}
+
+#buttons button {
+		padding: 3px;
+}

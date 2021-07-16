@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+		<title>Start New Transcription</title>
+		<link rel="stylesheet" href="assets/css/dialogue.css">
+	</head>
+	<body>
+		<div>
+			<form id="new_transcription_frm">
+				<input type="hidden" value="true" id="basetext"/>
+
+				<label id="siglum_label" for="siglum">Siglum:</label>
+				<input type="text" id="siglum"/>
+
+				<label id="language_label" for="language">Language:</label>
+				<select type="text" id="language">
+					<option value="ae">Avestan</option>
+					<option value="gu">Gujarati</option>
+					<option value="fa">Persian</option>
+					<option value="sa">Sanskrit</option>
+					<option value="ae-Avst">Avestan in Avesta Script</option>
+					<option value="ae-Phlv">Avestan in Pahlavi Script</option>
+					<option value="ae-Gujr">Avestan in Gujarati Script</option>
+					<option value="gu-Gujr">Gujarati in Gujarati Script</option>
+					<option value="gu-Arab">Gujarati in Arabic Script</option>
+					<option value="pal-Avst">Zoroastrian Middle Persian in Avesta Script</option>
+					<option value="pal-Phlv">Zoroastrian Middle Persian in Pahlavi Script</option>
+					<option value="pal-Phli">Middle Persian in inscriptional Pahlavi Script</option>
+					<option value="pal-Gujr">Zoroastrian Middle Persian in Gujarati Script</option>
+					<option value="ar">Arabic</option>
+				</select>
+
+				<label id="select_basetext_label" for="select_basetext_btn">Basetext:</label>
+				<div id="basetext_section">
+					<input type="button" id="select_basetext_btn" value="Choose File"/>
+					<span id="basetext_path_display">No file chosen</span>
+				</div>
+				<input type="hidden" id="basetext_path" value=""/>
+
+				<button type="submit" id="start_transcription_btn">Start Transcription</button>
+			</form>
+		</div>
+		<script>window.$ = window.jQuery = require('jquery');</script>
+		<script type="text/javascript" src="startDialogueRenderer.js"></script>
+	</body>
+</html>

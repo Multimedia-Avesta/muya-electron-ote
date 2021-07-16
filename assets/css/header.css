@@ -1,0 +1,229 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.CodeMirror {
+	font-size: 12px;
+}
+
+#container {
+	padding: 8px;
+}
+
+.tablinks {
+	border: 1px solid #ddd;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #495057;
+    important!
+}
+
+#buttons {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+
+#save-btn {
+	margin-right: 10px;
+	padding: 5px;
+}
+
+#close-btn {
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.CodeMirror {
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+
+#form_view {
+	overflow: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 440px;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+
+#header_form {
+	width: 100%;
+}
+
+.section {
+	padding-bottom: 15px;
+	border-bottom: 1px solid silver;
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: 50px auto 50px auto 30px;
+}
+
+.last_section {
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: 50px auto 50px auto 30px;
+}
+
+div#edition_div.section {
+	padding-bottom: 15px;
+	border-bottom: 1px solid silver;
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: 120px auto 50px auto 30px;
+}
+
+div#corrector_hands_div.section {
+	padding-bottom: 15px;
+	border-bottom: 1px solid silver;
+}
+
+div#corrector_hands_div.section p, div#corrector_hands_div.section ul {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+.alt_id, .add_title, .add_creator, .add_funder, .add_distributer {
+	grid-column: 1 / 6;
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: 50px auto 50px auto 30px;
+}
+
+.section_header {
+	color: grey;
+	font-size: 14px;
+	font-weight: normal;
+	grid-column: 1 / 6;
+}
+
+.section_header.half {
+	grid-column: 1 / 3;
+}
+
+.populate {
+		grid-column: 3 / 5;
+		justify-self: right;
+}
+
+.label1 {
+		grid-column: 1 / 2;
+		justify-self: right;
+		align-self: center;
+}
+
+.label2 {
+	grid-column: 3 / 4;
+	justify-self: right;
+	align-self: center;
+}
+
+.input_long {
+	grid-column: 2 / 5;
+}
+
+.input_middle {
+	grid-column: 2 / 3;
+}
+
+.input_small {
+	grid-column: 4 / 5;
+}
+
+.del {
+	grid-column: 5 / 6;
+	align-self: center;
+}
+
+.add {
+	grid-column: 2 / 3;
+}
+
+#corrector_hands_list, .instructions {
+	grid-column: 2 / 5;
+}
+
+.textarea_long {
+	grid-column: 2 / 5;
+}
+
+span.populate {
+	font-size: 14px;
+	text-decoration: underline;
+	color: steelblue;
+	cursor: pointer;
+}
+
+.instructions {
+	font-size: 11pt;
+	color: dark-grey;
+}
+
+.hand {
+	font-size: 11pt;
+}
+
+ul.sortable_list {
+	list-style-type: none;
+	border: 1px solid lightgrey;
+	padding: 0;
+}
+
+ul.sortable_list li {
+	background: ghostwhite;
+	border: 1px solid grey;
+	padding: 5px;
+	margin: 5px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	background-color: #ccc;
+  float: left;
+  border-top: 1px solid silver;
+	border-right: 1px solid silver;
+	border-left: 1px solid silver;
+	border-bottom: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#content {
+	border: 1px solid silver;
+}

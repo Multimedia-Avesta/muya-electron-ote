@@ -1,0 +1,91 @@
+<form id="header_form">
+	<div class="section">
+		<h3 class="section_header">Basic Details</h3>
+
+			<label for="document_title" class="label1">Title:</label>
+   		<input id="document_title" type="text" class="input_long"></input>
+
+			<label for="siglum" class="label1">Siglum:</label>
+			<input type="text" id="siglum" name="siglum" class="input_middle"/>
+	    <label for="siglum_type" class="label2">Type:</label>
+	    <input type="text" id="siglum_type" name="siglum_type" class="input_small"/>
+
+	</div>
+ 	<div id="altidentifier" class="section">
+		<h3 class="section_header">Alternative Identifiers</h3>
+        <div id="add_altidentifier" class="add">
+        	<div>
+        		<img class="add_logo" title="Add another identifier" height="20px" width="20px" src="assets/img/add.png"/>
+        	</div>
+        </div>
+    </div>
+   	<div id="title_div" class="section">
+   		<h3 class="section_header">Additional Titles</h3>
+   		<div id="add_title" class="add">
+   			<div>
+   				<img class="add_logo" title="Add another title" height="20px" width="20px" src="assets/img/add.png"/>
+   			</div>
+   		</div>
+   	</div>
+
+   	<div class="section">
+        <h3 class="section_header">Description of Restoration (can include general description of manuscript)</h3>
+        <textarea rows="5" id="phys_desc" name="phys_desc" class="textarea_long"></textarea>
+    </div>
+
+   	<div class="section">
+        <h3 class="section_header">Name of Scribe</h3>
+        <textarea rows="1" id="scribe_name" name="scribe_name" class="textarea_long"></textarea>
+    </div>
+
+    <div id="corrector_hands_div" style="display:none" class="section">
+        <h3 class="section_header">Corrector hands</h3>
+        <p class="instructions">Drag the hands into chronological order with the earliest at the top.</p>
+        <ul id="corrector_hands_list" class="sortable_list"></ul>
+    </div>
+
+    <div id="creator_div" class="section">
+        <h3 class="section_header">Creator</h3>
+        <div id="add_creator" class="add">
+        	<div>
+            	<img class="add_logo" title="Add another creator" height="20px" width="20px" src="assets/img/add.png"/>
+            </div>
+        </div>
+    </div>
+    <div id="funder_div" class="section">
+        <h3 class="section_header">Funder</h3>
+        <div id="add_funder" class="add">
+        	<div">
+            	<img class="add_logo" title="Add another funder" height="20px" width="20px" src="assets/img/add.png"/>
+            </div>
+        </div>
+    </div>
+    <div id="distributor_div" class="section">
+        <h3 class="section_header">Distributor</h3>
+        <div id="add_distributor" class="add">
+        	<div>
+            	<img class="add_logo" title="Add another distributor" height="20px" width="20px" src="assets/img/add.png"/>
+            </div>
+        </div>
+    </div>
+    <div id="edition_div" class="section">
+    	<h3 class="section_header">Edition</h3>
+
+    	<label for="edition_number" class="label1">Version number:</label>
+    	<input id="edition_number" type="text" class="input_long"></input>
+
+    </div>
+    <div class="section">
+        <h3 class="section_header half">License</h3><span class="populate" id="license_populate">Populate with default data</span>
+        <textarea rows="4" id="license" name="license" class="textarea_long"></textarea>
+    </div>
+    <div class="section">
+        <h3 class="section_header half">Project Description</h3><span class="populate" id="project_populate">Populate with default data</span>
+        <textarea rows="3" id="project_description" name="project_description" class="textarea_long"></textarea>
+    </div>
+    <div class="last_section">
+        <h3 class="section_header half">Editorial Declaration</h3><span class="populate" id="editorial_populate">Populate with default data</span>
+        <textarea rows="3" id="editorial_declaration" name="editorial_declaration" class="textarea_long"></textarea>
+    </div>
+
+</form>

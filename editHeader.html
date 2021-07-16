@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+		<title>Edit Header</title>
+		<link rel="stylesheet" href="assets/css/header.css"/>
+		<link rel="stylesheet" href="./node_modules/codemirror/lib/codemirror.css"/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="buttons">
+				<button id="save-btn">Save</button>
+				<button id="close-btn">Close</button>
+			</div>
+			<div class="tab">
+			  <button class="tablinks active" id="form_tab">Form view</button>
+			  <button class="tablinks" id="xml_tab">XML view</button>
+			</div>
+
+			<div id="content">
+
+				<div id="form_view" class="tabcontent">
+
+				</div>
+				<div id="xml_view" class="tabcontent">
+					<textarea id="xml_editor">
+
+					</textarea>
+				</div>
+
+			</div>
+
+		</div>
+
+		<script>window.$ = window.jQuery = require('jquery');</script>
+		<script type="text/javascript" src="headerRenderer.js"></script>
+		<script type="text/javascript" src="assets/js/vkbeautify.0.99.00.beta.js"></script>
+		<script type="text/javascript" src="assets/js/forms.js"></script>
+		<script type="text/javascript" src="assets/js/utils.js"></script>
+
+	</body>
+</html>

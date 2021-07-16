@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+		<title>Header Replacement</title>
+		<link rel="stylesheet" href="assets/css/dialogue.css">
+	</head>
+	<body>
+		<p><b>The teiHeader in this transcription does not contain the information needed.</b></p>
+		 <p>To replace the header with a new version and continue to load this transcription please supply the language and siglum below.</p>
+		<div class="container-fluid">
+			<form id="broken_header_frm">
+				<input type="hidden" value="" id="filename"/>
+
+				<label id="siglum_label" for="siglum">Siglum:</label>
+				<input type="text" id="siglum"/>
+
+				<label id="language_label" for="language">Language:</label>
+				<select type="text" id="language">
+					<option value="ae">Avestan</option>
+					<option value="gu">Gujarati</option>
+					<option value="fa">Persian</option>
+					<option value="sa">Sanskrit</option>
+					<option value="ae-Avst">Avestan in Avesta Script</option>
+					<option value="ae-Phlv">Avestan in Pahlavi Script</option>
+					<option value="ae-Gujr">Avestan in Gujarati Script</option>
+					<option value="gu-Gujr">Gujarati in Gujarati Script</option>
+					<option value="gu-Arab">Gujarati in Arabic Script</option>
+					<option value="pal-Avst">Zoroastrian Middle Persian in Avesta Script</option>
+					<option value="pal-Phlv">Zoroastrian Middle Persian in Pahlavi Script</option>
+					<option value="pal-Phli">Middle Persian in inscriptional Pahlavi Script</option>
+					<option value="pal-Gujr">Zoroastrian Middle Persian in Gujarati Script</option>
+					<option value="ar">Arabic</option>
+				</select>
+
+				<div id="buttons">
+					<button type="submit" id="do_load_transcription_btn">Load Transcription</button>
+					<button id="cancel_load_transcription_btn">Cancel</button>
+				</div>
+			</form>
+		</div>
+		<script>window.$ = window.jQuery = require('jquery');</script>
+		<script type="text/javascript" src="noHeaderDialogueRenderer.js"></script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "MUYA-OTE",
+  "productName": "MUYA OTE",
+  "version": "1.6.0",
+  "description": "A electron implementation of the MUYA OTE for making transcriptions.",
+  "main": "main.js",
+  "dependencies": {
+    "codemirror": "^5.58.3",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "electron": "^6.1.12",
+    "electron-packager": "^14.2.1"
+  },
+  "scripts": {
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/muya-ote.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . muya-ote --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/muya-ote.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"MUYA\\ OTE\"",
+    "package-linux": "electron-packager . muya-ote --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "author": "Multimedia Yasna project (MUYA)",
+  "license": "GPL-2.0+",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.bham.ac.uk/smithcy-muya/muya-electron-ote.git"
+  }
+}

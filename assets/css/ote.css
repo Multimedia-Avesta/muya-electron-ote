@@ -1,0 +1,272 @@
+body{
+    font-family: Arial;
+    font-size: 11pt;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+div#container {
+    padding-top: 10px;
+    padding-bottom: 50px;   
+}
+
+
+div#container, div#scroller {
+    overflow: auto;
+    position: relative;
+}
+
+div#scroller {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div#header {
+    padding: 7px;
+    height: 40px;
+}
+
+div.transcription_header {
+    background: silver;
+}
+
+div#login_status {    
+    float: right;
+    font-size: 11pt;
+}
+
+div#header {
+    font-family: arial;
+}
+
+div#header h1 { 
+    font-size: 12pt;
+    float:left;
+}
+
+div#header h1#project_name {
+    float: left;
+    padding-left: 20px;
+}
+
+p#detail_summary {
+    float: left;
+}
+
+p#message_panel {
+    float: right;
+    /*margin-top: 7px;
+    margin-left: 20px;
+    padding: 3px 3px 3px 3px;*/
+}
+
+div#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.3;
+}
+
+div#overlay_message {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width:500px;
+    margin-left: -250px; 
+    background: #000;;
+    opacity: 0.5;
+    
+
+}
+
+p.center {
+    position: relative;
+    font-size: 20pt;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#loading{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+br.clear {
+    clear: both;
+}
+
+div#container {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 50px;    
+}
+
+div.halfcolumn, div.column {
+    float: left;
+    width: 45%;
+    margin: 5px;
+    overflow-y: auto;
+}
+
+
+
+#footer { 
+    position: fixed;
+    clear: both; 
+    width: 100%;
+    height: 50px; 
+    bottom: 0;
+    border-top: 1px solid black;
+    padding: 0 0 0 0; 
+    text-align: right; 
+    background-color: white; 
+    overflow-y: auto;
+} 
+
+#footer input, #footer button {
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+#footer .left_foot {
+    float: left;
+    
+}
+
+
+.section {
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+
+
+#cancel_rec_optns_popup {
+    float: left;
+}
+
+#new_reconciliation {
+    float: right;
+}
+
+#rec_optns_popup_title {
+    margin-top: 0px;
+}
+
+/*
+ * reconciliation extra details 
+ */
+div#submit_extras {
+    position: fixed;
+    bottom: 50px;
+    width: 250px;
+    right: 20px;
+    background-color: white; 
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    z-index: 300001;
+}
+
+input#ok_button {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+input#cancel_button {
+    
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+div#submit_extras textarea {
+    width: 237px;
+    height: 80px;
+}
+
+/*
+ * required comments before indexing
+ */
+div#index_comments {
+    position: fixed;
+    bottom: 50px;
+    width: 250px;
+    right: 20px;
+    background-color: white; 
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+div#index_comments textarea {
+    width: 237px;
+    height: 80px;
+}
+
+/*div#index_comments textarea.highlighted {
+    border: 1px solid red;
+}
+*/
+input#begin_indexing_button {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+
+/*
+ * RECONCILER CSS
+ * 
+ */
+ div.revision_header {
+    background: silver;
+}
+
+table {
+    font-size: 10pt;
+    border-collapse:collapse;
+}
+
+th {
+    font-weight: normal;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+div#details_table_div {
+    margin-top: 20px;
+}
+
+span.small {
+    font-size: 10pt;
+}
+
+div.wit_column {
+    float:left;
+}
+
+.mce-caret {
+	color: green;
+}
+ 

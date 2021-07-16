@@ -1,0 +1,48 @@
+/* preferences.html */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#first_time_splash {
+	font-size: 11pt
+}
+
+#first_time_splash p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#first_time_splash h3 {
+	font-size: 13pt;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: lightgrey;
+}
+
+#preferences_frm {
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: 200px auto;
+}
+
+#transcriber_label, #default_directory_label, #default_basetext_directory_label {
+	grid-column: 1 / 2;
+	justify-self: right;
+}
+
+#transcriber, #default_directory, #default_basetext_directory {
+	grid-column: 2 / 3;
+}
+
+#buttons {
+	grid-column: 2 / 3;
+	justify-self: right;
+}
+
+#save-btn, #cancel-btn {
+	margin-right: 10px;
+	padding: 5px;
+}

@@ -1,0 +1,3 @@
+[submodule "ote"]
+	path = ote
+	url = https://github.com/Multimedia-Avesta/muya-ote.git

@@ -55,6 +55,6 @@ To package for windows and mac
 
 `./make_MUYA_electron_packages.sh [version number]`
 
-The packaged versions will be available in the directory release-builds. 
+The packaged versions will be available in the directory `release-builds`. 
 
-The zip versions will be placed as siblings of the cloned directory.
+The zip versions will be created as siblings of the cloned directory.

@@ -10,8 +10,9 @@ This is the source code used to create packaged/zipped versions that run on wind
 
 * node.js 
 * node package manager (npm)
-* wine64 to compile for windows on linux (and perhaps mac)
 * jq (https://stedolan.github.io/jq/) optional but if not used version number must be manually altered in the package.json file before running .sh file
+
+The code in the repository just distributes the application as zip files not as proper installers for each OS. 
 
 ## Installation example for Ubuntu
 
@@ -20,8 +21,6 @@ First ensure you have the required packages
 `sudo apt install nodejs`
 
 `sudo apt install npm`
-
-`sudo apt install wine64`
 
 `sudo apt install jq`
 
